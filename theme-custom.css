@@ -1,0 +1,9 @@
+@import url("styles/themes/theme-luiza.min.css");
+
+.factory-flag {
+  visibility: hidden;
+}
+
+.bg-gray {
+  filter: grayscale(100%);
+}
