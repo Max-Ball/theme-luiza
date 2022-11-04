@@ -8,7 +8,7 @@ $username = 'user@gmail.com';
 $password = 'password';
 $smtpHost = 'ssl://smtp.gmail.com';
 $smtpPort = '465';
-$to = 'user@gmail.com';
+$to = 'max.palmer.ball@gmail.com';
 $from = 'user@gmail.com';
 
 $subject = 'Contact Form';
@@ -25,17 +25,17 @@ $headers = array(
 	'Subject' => $subject
 );
 $smtp = Mail::factory('smtp', array(
-			'host' => $smtpHost,
-			'port' => $smtpPort,
-			'auth' => true,
-			'username' => $username,
-			'password' => $password
-		));
+	'host' => $smtpHost,
+	'port' => $smtpPort,
+	'auth' => true,
+	'username' => $username,
+	'password' => $password
+));
 
 $mail = $smtp->send($to, $headers, $body);
 
 if (PEAR::isError($mail)) {
-	echo($mail->getMessage());
+	echo ($mail->getMessage());
 } else {
-	echo($successMessage);
+	echo ($successMessage);
 }
