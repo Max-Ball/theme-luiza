@@ -11,8 +11,8 @@ $smtpPort = '465';
 $to = 'max.palmer.ball@gmail.com';
 $from = 'user@gmail.com';
 
-$subject = 'Contact Form';
-$successMessage = 'Message successfully sent!';
+$subject = 'Contact From Portfolio';
+$successMessage = 'Message sent!';
 
 $replyTo = $_POST['your-email'];
 $name = $_POST['your-name'];
