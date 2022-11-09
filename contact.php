@@ -12,22 +12,22 @@ $mail = new PHPMailer(true);
 
 try {
 	//Server settings
-	$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+	$mail->SMTPDebug = 2;                      //Enable verbose debug output
 	$mail->isSMTP();                                            //Send using SMTP
-	$mail->Host       = 'smtp.example.com';                     //Set the SMTP server to send through
+	$mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
 	$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-	$mail->Username   = 'user@example.com';                     //SMTP username
-	$mail->Password   = 'secret';                               //SMTP password
+	$mail->Username   = 'max.palmer.ball@example.com';                     //SMTP username
+	$mail->Password   = 'Shak3d0wnstr33t88?';                               //SMTP password
 	$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-	$mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+	$mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
 	//Recipients
-	$mail->setFrom('from@example.com', 'Mailer');
+	$mail->setFrom('max.ball3388@gmail.com', 'Sender Max');
 	$mail->addAddress('max.palmer.ball@gmail.com', 'Max Ball');     //Add a recipient
-	$mail->addAddress('ellen@example.com');               //Name is optional
-	$mail->addReplyTo('info@example.com', 'Information');
-	$mail->addCC('cc@example.com');
-	$mail->addBCC('bcc@example.com');
+	// $mail->addAddress('ellen@example.com');               //Name is optional
+	// $mail->addReplyTo('info@example.com', 'Information');
+	// $mail->addCC('cc@example.com');
+	// $mail->addBCC('bcc@example.com');
 
 	//Attachments
 	$mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
